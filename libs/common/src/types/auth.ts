@@ -36,7 +36,7 @@ export interface User {
   id: string;
   username: string;
   password: string;
-  age: string;
+  age: number;
   subscribed: boolean;
   socialMedia: SocialMedia | undefined;
 }
