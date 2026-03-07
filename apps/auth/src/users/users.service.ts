@@ -9,7 +9,7 @@ export class UsersService implements OnModuleInit {
 
   onModuleInit() {
       for(let i=0; i<100; i++){
-        this.create({ username: `User-${randomUUID}`, password: `password-${Math.floor(Math.random()*10000)}`, age: Math.floor(Math.random()*200)});
+        this.create({ username: `User-${randomUUID()}`, password: `password-${Math.floor(Math.random()*10000)}`, age: Math.floor(Math.random()*200)});
       }
   }
 
