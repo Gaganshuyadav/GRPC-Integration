@@ -3,7 +3,7 @@ import { Inject, Injectable, OnModuleInit } from '@nestjs/common';
 import type { ClientGrpc } from '@nestjs/microservices';
 
 @Injectable()
-export class UsersService {
+export class UsersService implements OnModuleInit{
   constructor( @Inject(AUTH) private client: ClientGrpc){ }
 
   private usersService: UsersServiceClient;
